@@ -115,13 +115,6 @@ function Login() {
                     </p>
                 }
 
-                {/* Forgot Password */}
-
-                <div className="forgot-password">
-                    <Link to="/forgot-password">
-                        Forgot Password?
-                    </Link>
-                </div>
 
                 {/* Login Button */}
 
