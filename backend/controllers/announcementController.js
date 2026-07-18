@@ -70,9 +70,7 @@ const viewAnnouncement = async (req, res) => {
 
 };
 
-// ===============================
 // Delete Announcement
-// ===============================
 const deleteAnnouncement = async (req, res) => {
 
     try {
