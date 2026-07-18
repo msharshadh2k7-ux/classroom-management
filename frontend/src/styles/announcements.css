@@ -1,0 +1,407 @@
+/* ===========================
+   Header
+=========================== */
+
+.announcement-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    gap:30px;
+}
+
+.announcement-title{
+    flex:1;
+}
+
+.announcement-title h2{
+    margin:0;
+    font-size:40px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+.announcement-title p{
+    margin-top:8px;
+    color:#6b7280;
+    font-size:17px;
+    line-height:1.6;
+}
+
+/* ===========================
+   Add Button
+=========================== */
+
+.create-announcement-btn{
+
+    flex:none;
+
+    width:210px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+
+}
+
+.create-announcement-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   Announcement Grid
+=========================== */
+
+.announcement-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:28px;
+
+}
+
+/* ===========================
+   Announcement Card
+=========================== */
+
+.announcement-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+
+}
+
+.announcement-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 14px 28px rgba(0,0,0,.12);
+
+}
+
+/* ===========================
+   Card Header
+=========================== */
+
+.announcement-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.announcement-top h3{
+
+    margin:0;
+
+    font-size:30px;
+
+    color:#2563eb;
+
+    font-weight:700;
+
+}
+
+.announcement-date{
+
+    color:#6b7280;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+/* ===========================
+   Description
+=========================== */
+
+.announcement-body{
+
+    margin-top:18px;
+
+    color:#374151;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    white-space:pre-wrap;
+
+    word-break:break-word;
+
+    overflow-wrap:anywhere;
+
+}
+
+/* ===========================
+   Action Buttons
+=========================== */
+
+.announcement-actions{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:28px;
+
+}
+
+.edit-btn{
+
+    flex:1;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#f59e0b;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    background:#d97706;
+
+}
+
+.delete-btn{
+
+    flex:1;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+}
+
+/* ===========================
+   Empty State
+=========================== */
+
+.empty-card{
+
+    background:#ffffff;
+
+    padding:60px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+
+}
+
+.empty-card h3{
+
+    margin:0;
+
+    color:#6b7280;
+
+    font-size:24px;
+
+}
+
+/* ===========================
+   Loading
+=========================== */
+
+.loading{
+
+    text-align:center;
+
+    padding:40px;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#2563eb;
+
+}
+
+/* ===========================
+   Error
+=========================== */
+
+.error-message{
+
+    text-align:center;
+
+    color:#ef4444;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-top:25px;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:900px){
+
+    .announcement-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .create-announcement-btn{
+
+        width:200px;
+
+        height:48px;
+
+    }
+
+    .announcement-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .announcement-title h2{
+
+        font-size:32px;
+
+    }
+
+    .announcement-title p{
+
+        font-size:15px;
+
+    }
+
+    .announcement-card{
+
+        padding:20px;
+
+    }
+
+    .announcement-top h3{
+
+        font-size:24px;
+
+    }
+
+    .announcement-actions{
+
+        flex-direction:column;
+
+    }
+
+    .edit-btn,
+
+    .delete-btn{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:500px){
+
+    .announcement-title h2{
+
+        font-size:28px;
+
+    }
+
+    .announcement-body{
+
+        font-size:15px;
+
+    }
+
+    .create-announcement-btn{
+
+        width:100%;
+
+    }
+
+}

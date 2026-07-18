@@ -1,0 +1,293 @@
+/* ===========================
+   Dashboard
+=========================== */
+
+.dashboard{
+    display:flex;
+    min-height:100vh;
+    background:#f5f7fb;
+}
+
+.dashboard-content{
+    flex:1;
+    padding:30px;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.subjects-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.subjects-header h2{
+    color:#2563eb;
+    font-weight:700;
+}
+
+.subjects-header p{
+    color:#6b7280;
+}
+
+/* ===========================
+   Add Subject Button
+=========================== */
+
+.add-subject-btn{
+
+   flex:none;
+
+    width:210px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+
+}
+
+.add-subject-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ===========================
+   Subject Grid
+=========================== */
+
+.subjects-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    justify-content: center;
+
+}
+
+/* ===========================
+   Subject Card
+=========================== */
+
+.subject-card{
+
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.subject-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.subject-icon{
+
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#e8f0ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+
+}
+
+.subject-icon i{
+
+    font-size:30px;
+    color:#2563eb;
+
+}
+
+.subject-info h3{
+
+    margin-bottom:8px;
+    color:#1f2937;
+
+}
+
+.subject-info p{
+
+    color:#6b7280;
+
+}
+
+.subject-description{
+
+    color:#6b7280;
+    margin:20px 0;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.subject-actions{
+
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+
+}
+
+.subject-actions button{
+
+    border:none;
+    border-radius:50px;
+    padding:10px 20px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+/* Open */
+
+.open-btn{
+
+    background:#22c55e;
+    color:white;
+
+}
+
+.open-btn:hover{
+
+    background:#16a34a;
+
+}
+
+/* Edit */
+
+.edit-btn{
+
+    background:#facc15;
+    color:#111827;
+
+}
+
+.edit-btn:hover{
+
+    background:#eab308;
+
+}
+
+/* Delete */
+
+.delete-btn{
+
+    background:#ef4444;
+    color:white;
+
+}
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+}
+
+/* ===========================
+   Loading
+=========================== */
+
+.loading{
+
+    text-align:center;
+    font-size:18px;
+    color:#2563eb;
+
+}
+
+/* ===========================
+   Error
+=========================== */
+
+.error-message{
+
+    text-align:center;
+    color:red;
+
+}
+
+/* ===========================
+   Empty
+=========================== */
+
+.empty-subject{
+
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.empty-subject i{
+
+    font-size:60px;
+    color:#2563eb;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.subjects-header{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+
+}
+
+.dashboard-content{
+
+    padding:20px;
+
+}
+
+.subjects-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.subject-actions{
+
+    justify-content:center;
+
+}
+
+}

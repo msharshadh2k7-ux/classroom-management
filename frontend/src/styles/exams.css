@@ -1,0 +1,440 @@
+/* ===========================
+   Exams Page
+=========================== */
+
+.dashboard-content{
+
+    padding:35px;
+
+    background:#f8fafc;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.exam-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.exam-title h2{
+
+    font-size:38px;
+
+    color:#1e3a8a;
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+}
+
+.exam-title p{
+
+    color:#64748b;
+
+    font-size:17px;
+
+}
+
+/* ===========================
+   Create Button
+=========================== */
+
+.create-exam-btn{
+
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+    color:#fff;
+
+    border:none;
+
+    padding:14px 26px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+
+}
+
+.create-exam-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+
+}
+
+/* ===========================
+   Exam Grid
+=========================== */
+
+.exam-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(380px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================
+   Exam Card
+=========================== */
+
+.exam-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.exam-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(37,99,235,.20);
+
+}
+
+/* ===========================
+   Card Header
+=========================== */
+
+.exam-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.exam-name{
+
+    color:#2563eb;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.subject-badge{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    padding:8px 16px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+/* ===========================
+   Exam Details
+=========================== */
+
+.exam-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    margin-bottom:20px;
+
+}
+
+.detail-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #e5e7eb;
+
+    font-size:16px;
+
+}
+
+.detail-row span:first-child{
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.detail-row span:last-child{
+
+    color:#111827;
+
+}
+
+/* ===========================
+   Portion Box
+=========================== */
+
+.portion-box{
+
+    margin-top:18px;
+
+    background:#f8fafc;
+
+    border-left:5px solid #2563eb;
+
+    border-radius:12px;
+
+    padding:16px;
+
+}
+
+.portion-box h4{
+
+    color:#2563eb;
+
+    margin:0 0 10px;
+
+    font-size:18px;
+
+}
+
+.portion-box p{
+
+    margin:0;
+
+    color:#374151;
+
+    line-height:1.7;
+
+    white-space:pre-wrap;
+
+    word-break:break-word;
+
+    max-height:180px;
+
+    overflow-y:auto;
+
+    padding-right:6px;
+
+}
+
+/* Scrollbar */
+
+.portion-box p::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.portion-box p::-webkit-scrollbar-thumb{
+
+    background:#93c5fd;
+
+    border-radius:10px;
+
+}
+
+/* ===========================
+   Action Buttons
+=========================== */
+
+.exam-actions{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:22px;
+
+}
+
+.edit-btn{
+
+    flex:1;
+
+    background:#f59e0b;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.edit-btn:hover{
+
+    background:#d97706;
+
+}
+
+.delete-btn{
+
+    flex:1;
+
+    background:#ef4444;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+}
+
+/* ===========================
+   Empty Card
+=========================== */
+
+.empty-card{
+
+    grid-column:1/-1;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.empty-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.empty-card p{
+
+    color:#64748b;
+
+}
+
+/* ===========================
+   Loading & Error
+=========================== */
+
+.loading,
+.error-message{
+
+    text-align:center;
+
+    padding:40px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.error-message{
+
+    color:#dc2626;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .exam-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .exam-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .exam-card{
+
+        width:100%;
+
+    }
+
+}

@@ -1,0 +1,108 @@
+/* Background */
+.modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    backdrop-filter:blur(4px);
+}
+
+/* Popup Card */
+.modal-card{
+    width:450px;
+    max-width:90%;
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    animation:popup .25s ease;
+}
+
+@keyframes popup{
+    from{
+        transform:translateY(-20px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+.modal-card h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+/* Form */
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.form-group input{
+    width:100%;
+    padding:12px 15px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:15px;
+    box-sizing:border-box;
+}
+
+.form-group input:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+/* Error */
+.error{
+    color:red;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+/* Buttons */
+.modal-buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-top:25px;
+}
+
+.cancel-btn{
+    background:#6b7280;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    padding:10px 22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cancel-btn:hover{
+    background:#4b5563;
+}
+
+.create-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    padding:10px 22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.create-btn:hover{
+    background:#1d4ed8;
+}

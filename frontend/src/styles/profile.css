@@ -1,0 +1,250 @@
+/* ===========================
+   Profile Page
+=========================== */
+
+.profile-header{
+    margin-bottom:30px;
+}
+
+.profile-header h2{
+    margin:0;
+    color:#1e293b;
+    font-size:30px;
+}
+
+.profile-header p{
+    color:#64748b;
+    margin-top:8px;
+}
+
+/* ===========================
+   Main Container
+=========================== */
+
+.profile-container{
+
+    max-width:900px;
+    margin:auto;
+
+}
+
+/* ===========================
+   Top Card
+=========================== */
+
+.profile-top-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+.profile-avatar{
+
+    width:110px;
+    height:110px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:white;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:18px;
+
+}
+
+.profile-top-card h2{
+
+    margin:0;
+
+    color:#111827;
+
+}
+
+.department-text{
+
+    color:#64748b;
+
+    margin:10px 0;
+
+    font-size:16px;
+
+}
+
+.role-badge{
+
+    display:inline-block;
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    font-weight:600;
+
+    margin-top:10px;
+
+}
+
+/* ===========================
+   Grid
+=========================== */
+
+.profile-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.info-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.info-card h3{
+
+    margin-top:0;
+
+    margin-bottom:25px;
+
+    color:#1e293b;
+
+    border-bottom:2px solid #e2e8f0;
+
+    padding-bottom:10px;
+
+}
+
+/* ===========================
+   Detail Row
+=========================== */
+
+.detail-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.detail-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.detail-row span{
+
+    color:#64748b;
+
+    font-weight:500;
+
+}
+
+.detail-row strong{
+
+    color:#111827;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Loading
+=========================== */
+
+.loading,
+.error-message{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+}
+
+.error-message{
+
+    color:red;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .profile-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .profile-top-card{
+
+        padding:25px;
+
+    }
+
+    .profile-avatar{
+
+        width:90px;
+        height:90px;
+
+        font-size:34px;
+
+    }
+
+}

@@ -1,0 +1,248 @@
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar {
+    width: 260px;
+    min-width: 260px;
+    height: 100dvh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #111827;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s ease;
+    box-shadow: 2px 0 12px rgba(0,0,0,.25);
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar.collapsed {
+    width: 90px;
+    min-width: 90px;
+}
+
+/* ===========================
+   Hamburger
+=========================== */
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    z-index: 1200;
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.sidebar-logo {
+    text-align: center;
+    padding: 30px 20px 20px;
+}
+
+.logo-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sidebar-logo h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.sidebar-logo p {
+    margin-top: 6px;
+    color: #d1d5db;
+    font-size: 15px;
+}
+
+/* ===========================
+   Profile
+=========================== */
+
+.sidebar-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #374151;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.sidebar-profile h3 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.role-badge {
+    margin-top: 10px;
+    padding: 6px 18px;
+    border-radius: 25px;
+    background: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ===========================
+   Menu
+=========================== */
+
+.sidebar-menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 15px 18px;
+    border-radius: 12px;
+    color: #d1d5db;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.sidebar-menu a svg {
+    min-width: 22px;
+    font-size: 20px;
+}
+
+.sidebar-menu a:hover {
+    background: #1f2937;
+    color: white;
+}
+
+.sidebar-menu a.active {
+    background: #2563eb;
+    color: white;
+}
+
+/* ===========================
+   Logout
+=========================== */
+
+.logout-btn {
+    margin: 20px 15px;
+    width: calc(100% - 30px);
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+    background: #dc2626;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.logout-btn:hover {
+    background: #b91c1c;
+}
+
+/* ===========================
+   Collapsed
+=========================== */
+
+.sidebar.collapsed .sidebar-logo h2,
+.sidebar.collapsed .sidebar-logo p,
+.sidebar.collapsed .sidebar-profile h3,
+.sidebar.collapsed .role-badge,
+.sidebar.collapsed .sidebar-menu span,
+.sidebar.collapsed .logout-btn span {
+    display: none;
+}
+
+.sidebar.collapsed .sidebar-menu a {
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.sidebar.collapsed .sidebar-profile {
+    padding: 15px 0;
+}
+
+.sidebar.collapsed .profile-avatar {
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+}
+
+.sidebar.collapsed .logout-btn {
+    width: 60px;
+    margin: 20px auto;
+}
+
+/* ===========================
+   Main Content
+=========================== */
+
+.dashboard-content {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    min-height: 100dvh;
+    padding: 30px;
+    background: #f8fafc;
+    transition: all .35s ease;
+    box-sizing: border-box;
+}
+
+.dashboard-content.collapsed {
+    margin-left: 90px;
+    width: calc(100% - 90px);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px) {
+
+    .sidebar {
+        width: 230px;
+    }
+
+    .sidebar.collapsed {
+        width: 0;
+        min-width: 0;
+    }
+
+    .dashboard-content,
+    .dashboard-content.collapsed {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+}
