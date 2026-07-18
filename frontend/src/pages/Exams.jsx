@@ -84,7 +84,6 @@ function Exams() {
                         <h2>📝 Classroom Exams</h2>
 
                         <p>
-                            View upcoming examinations,
                             venue and syllabus.
                         </p>
                     </div>

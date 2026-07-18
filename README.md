@@ -38,7 +38,6 @@ A full-stack Classroom Management System developed to simplify classroom adminis
 ### Examination Module
 - Create examinations
 - Store syllabus/portion
-- View upcoming exams
 
 ### User Interface
 - Responsive design

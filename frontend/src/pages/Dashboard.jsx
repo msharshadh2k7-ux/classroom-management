@@ -123,63 +123,6 @@ function Dashboard() {
 
                 </div>
 
-                {/* Bottom Section */}
-                <div className="bottom-grid">
-
-                    {/* Upcoming Exams */}
-                    <div className="info-card">
-                        <h3>
-                            📅 Upcoming Exams
-                        </h3>
-
-                        <hr />
-
-                        <div className="info-item">
-                            <strong>
-                                No Upcoming Exams
-                            </strong>
-
-                            <span>
-                                Exams will appear here.
-                            </span>
-                        </div>
-
-                        <Link
-                            to="/exams"
-                            className="view-link"
-                        >
-                            View All →
-                        </Link>
-                    </div>
-
-                    {/* Recent Announcements */}
-
-                    <div className="info-card">
-                        <h3>
-                            📢 Recent Announcements
-                        </h3>
-
-                        <hr />
-
-                        <div className="info-item">
-                            <strong>
-                                No Announcements
-                            </strong>
-
-                            <span>
-                                Latest announcements will appear here.
-                            </span>
-                        </div>
-
-                        <Link
-                            to="/announcements"
-                            className="view-link"
-                        >
-                            View All →
-                        </Link>
-                    </div>
-
-                </div>
 
             </div>
 

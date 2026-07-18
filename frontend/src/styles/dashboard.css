@@ -93,50 +93,6 @@
     margin-bottom:6px;
 }
 
-/*Bottom Section*/
-
-.bottom-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-    gap:25px;
-}
-
-.info-card{
-    background:white;
-    border-radius:15px;
-    padding:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-.info-card h3{
-    color:#2563eb;
-    margin-bottom:10px;
-}
-
-.info-item{
-    margin:18px 0;
-}
-
-.info-item strong{
-    display:block;
-    color:#111827;
-}
-
-.info-item span{
-    color:#6b7280;
-    font-size:14px;
-}
-
-.view-link{
-    text-decoration:none;
-    font-weight:600;
-    color:#2563eb;
-}
-
-.view-link:hover{
-    color:#1d4ed8;
-}
-
 /*Buttons*/
 
 .dashboard-card .btn{
