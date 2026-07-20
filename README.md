@@ -15,13 +15,13 @@ A full-stack Classroom Management System developed to simplify classroom adminis
 - Organized subject dashboard
 
 ### Attendance Management
-- Mark attendance by date
+- Mark attendance by date (CR)
 - View attendance records
 - Student-wise attendance tracking
 - Attendance percentage calculation
 
 ### Notes Management
-- Upload study materials
+- Upload study materials (CR)
 - Download notes
 - Subject-wise organization
 
@@ -31,17 +31,16 @@ A full-stack Classroom Management System developed to simplify classroom adminis
 - Edit and delete announcements
 
 ### Polls
-- Create classroom polls
+- Create classroom polls (CR)
 - Vote once per poll
 - View poll results
 
 ### Examination Module
-- Create examinations
+- Create examinations (CR)
 - Store syllabus/portion
 
 ### User Interface
 - Responsive design
-- Dark Mode support
 - Clean and modern dashboard
 
 ## Tech Stack
